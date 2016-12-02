@@ -1,0 +1,233 @@
+html {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-blue {
+  background: #006699;
+  border: 1px solid transparent;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-red {
+  background: #cc0000;
+  border: 1px solid transparent;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.errors {
+  color: red;
+}
+
+.topbar-wrapper {
+  background: #eee;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.topbar-wrapper .topbar {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topbar-wrapper .topbar:after {
+  display: block;
+  content: '';
+  position: relative;
+  clear: both;
+}
+
+.topbar-wrapper .topbar .left {
+  float: left;
+  color: gray;
+  font-size: 32px;
+}
+
+.topbar-wrapper .topbar .right {
+  float: right;
+}
+
+.topbar-wrapper .topbar .right a {
+  border-bottom: 3px solid transparent;
+  padding: 11px;
+  display: block;
+  cursor: pointer;
+  color: cornflowerblue;
+}
+
+.topbar-wrapper .topbar .right a:hover {
+  border-bottom: 3px solid #ff9900;
+  color: #006699;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.wrapper:after {
+  display: block;
+  content: '';
+  position: relative;
+  clear: both;
+}
+
+@media all and (max-width: 657px) {
+  .wrapper {
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+.wrapper .todo {
+  border: 1px solid #bfbfbf;
+  margin: 10px 10px 10px 0;
+  float: left;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.wrapper .todo:last-child {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 657px) {
+  .wrapper .todo {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .wrapper .todo:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.wrapper .todo .todo-title {
+  margin: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.wrapper .todo .todo-description {
+  margin: 10px;
+}
+
+.wrapper .todo .todo-actions {
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper .todo .todo-actions a {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.wrapper .todo .todo-actions a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addTodoWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.addTodoWrapper ul {
+  background: #fff;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 0 5px #000;
+  border-radius: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+@media all and (max-width: 657px) {
+  .addTodoWrapper ul {
+    width: 90%;
+    top: 50vh;
+  }
+}
+
+.addTodoWrapper ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.addTodoWrapper ul li:last-child {
+  margin-bottom: 0;
+}
+
+.addTodoWrapper ul li p {
+  font-size: 20px;
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 10px;
+}
+
+.addTodoWrapper ul li input[type=text] {
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 657px) {
+  .addTodoWrapper ul li input[type=text] {
+    width: 100%;
+  }
+}
+
+.addTodoWrapper ul li textarea {
+  border: 1px solid #bfbfbf;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+@media all and (max-width: 657px) {
+  .addTodoWrapper ul li textarea {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 657px) {
+  .addTodoWrapper ul li input[type=button] {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

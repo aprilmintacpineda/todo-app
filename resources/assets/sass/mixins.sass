@@ -1,0 +1,12 @@
+=fit-to-contents()
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: -ms-max-content;
+	width: -o-max-content;
+	width: max-content;
+=clear-float()
+	&:after
+		display: block
+		content: ''
+		position: relative
+		clear: both

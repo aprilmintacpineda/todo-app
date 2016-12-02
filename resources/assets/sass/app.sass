@@ -1,0 +1,37 @@
+@import './mixins'
+
+html
+	position: relative
+
+*
+	margin: 0
+	padding: 0
+
+.btn-blue
+	background: #006699
+	border: 1px solid transparent
+	padding: 10px
+	color: #fff
+	cursor: pointer
+	border-radius: 4px
+
+.btn-red
+	background: #cc0000
+	border: 1px solid transparent
+	padding: 10px
+	color: #fff
+	cursor: pointer
+	border-radius: 4px
+
+.shown
+	display: block
+
+.hidden
+	display: none
+
+.errors
+	color: red
+
+@import './partials/topbar'
+@import './partials/todo'
+@import './partials/addtodo'

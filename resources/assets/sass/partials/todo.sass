@@ -1,0 +1,52 @@
+.wrapper
+	max-width: 1000px
+	margin: 10px auto
+	+clear-float
+
+	@media all and (max-width: 657px)
+		padding: 10px
+		margin: 0
+
+	.todo
+		border: 1px solid #bfbfbf
+		margin: 10px 10px 10px 0
+		float: left
+		width: 300px
+		height: 200px
+		position: relative
+		box-sizing: border-box
+
+		&:last-child
+			margin-bottom: 0
+
+		@media all and (max-width: 657px)
+			width: 100%
+			float: none
+			margin: 0
+			margin-bottom: 10px
+			box-sizing: border-box
+
+			&:last-child
+				margin-bottom: 0
+
+		.todo-title
+			margin: 10px
+			padding-bottom: 10px
+			font-weight: bold
+			border-bottom: 1px solid #bfbfbf
+
+		.todo-description
+			margin: 10px
+
+		.todo-actions
+			margin: 10px
+			position: absolute
+			bottom: 0
+
+			a
+				color: cornflowerblue
+				text-decoration: underline
+
+				&:hover
+					cursor: pointer
+					text-decoration: none

@@ -6,7 +6,7 @@ A simple todo app powered by:
 - redux @3.6.0
 - axios @0.15.3
 
-# See it on action
+# See it in action
 - Make sure you have composer installed and can run `composer` command in the command line
 - Make sure you have NPM install and can run `npm` command in the command line.
 - Make sure you have PHP and can run `php` command on the command line.
@@ -44,3 +44,9 @@ Run this command and go the your browser and go to `localhost:8000`
 ```
 php artisan serve
 ```
+
+# Developer
+- April Mintac Pineda
+
+### Report
+If you found bugs, report it at `amp.bugreports@gmail.com`.

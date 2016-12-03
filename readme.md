@@ -8,8 +8,8 @@ A simple todo app powered by:
 
 # See it in action
 - Make sure you have composer installed and can run `composer` command in the command line
-- Make sure you have NPM install and can run `npm` command in the command line.
-- Make sure you have PHP and can run `php` command on the command line.
+- Make sure you have NPM installed and can run `npm` command in the command line.
+- Make sure you have PHP installed and can run `php` command on the command line.
 
 ### First
 Clone the repository by runnning the following command
@@ -29,7 +29,7 @@ npm install
 ```
 
 ### Third
-Build the database by running the following commands
+Build the database by running the following commands one at a time
 
 ```
 // create a database.sqlite file on the database folder
@@ -39,7 +39,7 @@ php artisan migrate --seed
 ```
 
 ### Fourth
-Rename `.env.example` to `.env`.
+Rename `.env.example` to `.env`
 
 ### Fifth
 To get the application up and running, run this command and go the your browser and go to `localhost:8000`
@@ -52,4 +52,4 @@ php artisan serve
 - April Mintac Pineda
 
 ### Report
-If you found bugs, report it at `amp.bugreports@gmail.com`.
+If you found bugs, report it at `amp.bugreports@gmail.com`

@@ -38,8 +38,11 @@ touch database/database.sqlite
 php artisan migrate --seed
 ```
 
-### Get it running
-Run this command and go the your browser and go to `localhost:8000`
+### Fourth
+Rename `.env.example` to `.env`.
+
+### Fifth
+To get the application up and running, run this command and go the your browser and go to `localhost:8000`
 
 ```
 php artisan serve

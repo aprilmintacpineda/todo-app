@@ -19,9 +19,16 @@ export function todos_update(todo) {
 	}
 }
 
-export function todo_delete(id) {
+export function todos_delete(id) {
 	return {
 		type: 'TODOS_DELETE',
+		payload: id
+	}
+}
+
+export function todos_edit(id) {
+	return {
+		type: 'TODOS_EDIT',
 		payload: id
 	}
 }

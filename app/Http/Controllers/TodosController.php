@@ -26,10 +26,21 @@ class TodosController extends Controller
     }
 
     public function delete($id) {
-    	$todo = Todo::find($id);
-    	$todo->deleted = 1;
-    	$todo->save();
+        $todo = Todo::findOrFail($id);
+        $todo->deleted = 1;
+        $todo->save();
 
-    	return response(200);
+        return response(200);
+    }
+
+    public function edit($id) {
+        $inputs = Input::all();
+
+        $todo = Todo::findOrFail($id);
+        $todo->title = $inputs['title'];
+        $todo->description = $inputs['description'];
+        $todo->save();
+
+        return response(200);
     }
 }

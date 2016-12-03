@@ -21,7 +21,7 @@ export default function todos(state = initialState, action) {
 		break;
 
 		case 'TODOS_DELETE':
-			state.map((todo, i)=> todo.id == action.payload? state.splice(i, 1): todo);
+			state.map((todo, i) => todo.id == action.payload? state.splice(i, 1): todo);
 
 			axios.delete('todos/' + action.payload, {
 				_token: window.__CSRF__,
@@ -31,6 +31,19 @@ export default function todos(state = initialState, action) {
 			return [
 				...state
 			]
+		break;
+
+		case 'TODOS_EDIT':
+			state.map((todo, i) => {todo.id == action.payload.id? state[i] = action.payload: todo});
+
+			axios.patch('todos/' + action.payload.id, {
+				...action.payload,
+				_token: window.__CSRF__
+			});
+
+			return [
+				...state
+			];
 		break;
 	}
 

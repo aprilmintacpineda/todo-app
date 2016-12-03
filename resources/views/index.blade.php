@@ -8,6 +8,16 @@
     <title>Todo App</title>
 </head>
 <body>
+    <noscript>
+        <div class="title">
+            <p class="huge">Missing Dependency!</p>
+            <p class="small">That's an error.</p>
+        </div>
+
+        <div class="body">
+            <p>Your browser does not support JavaScript. This app requires Javascript to work properly. Please update your browser to its latest version before comming back.</p>
+        </div>
+    </noscript>
     <div id="app"></div>
     <script type="text/javascript">
     	window.__PRELOADED_STORE__ = <?= json_encode($preloaded_store); ?>;

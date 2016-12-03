@@ -16,3 +16,4 @@ Route::get('{slug}', 'IndexController@index')->where('slug', '(?!api)([A-Za-z\/\
 
 Route::post('todos', 'TodosController@create_new');
 Route::delete('todos/{id}', 'TodosController@delete');
+Route::patch('todos/{id}', 'TodosController@edit');

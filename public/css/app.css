@@ -38,8 +38,7 @@ html {
 }
 
 .topbar-wrapper {
-  background: #eee;
-  border-bottom: 1px solid #a9a9a9;
+  padding: 10px;
 }
 
 .topbar-wrapper .topbar {
@@ -79,7 +78,8 @@ html {
 
 .wrapper {
   max-width: 1000px;
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .wrapper:after {
@@ -148,6 +148,52 @@ html {
 .wrapper .todo .todo-actions a:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+.todo.edit {
+  position: relative;
+}
+
+.todo.edit input[type=text], .todo.edit textarea {
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo.edit textarea {
+  height: 95px;
+}
+
+.todo.edit .msg-box {
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 10;
+  border: 1px solid #a9a9a9;
+  background: #fff;
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #eee;
+}
+
+.todo.edit .msg-box:before {
+  display: block;
+  height: 0;
+  width: 0;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #a9a9a9;
 }
 
 .addTodoWrapper {
@@ -228,6 +274,35 @@ html {
   .addTodoWrapper ul li input[type=button] {
     width: 100%;
   }
+}
+
+noscript {
+  display: block;
+  width: 80%;
+  border: 1px solid #a9a9a9;
+  margin: 50px auto;
+}
+
+noscript .title {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+noscript .title .huge {
+  font-size: 30px;
+}
+
+noscript .title .small {
+  font-size: 20px;
+}
+
+noscript .title .huge, noscript .title .small {
+  color: red;
+}
+
+noscript .body {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -10,6 +10,7 @@ A simple todo app powered by:
 - Make sure you have composer installed and can run `composer` command in the command line
 - Make sure you have NPM installed and can run `npm` command in the command line.
 - Make sure you have PHP installed and can run `php` command on the command line.
+- Make sure you have installed gulp globally and can run `gulp` command on the command line.
 
 ### First
 Clone the repository by runnning the following command
@@ -29,6 +30,13 @@ npm install
 ```
 
 ### Third
+Make sure you build the app first by running this command
+
+```
+gulp --production
+```
+
+### Fourth
 Build the database by running the following commands one at a time
 
 ```
@@ -38,10 +46,10 @@ touch database/database.sqlite
 php artisan migrate --seed
 ```
 
-### Fourth
+### Fifth
 Rename `.env.example` to `.env`
 
-### Fifth
+### Sixth
 To get the application up and running, run this command and go the your browser and go to `localhost:8000`
 
 ```
